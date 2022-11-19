@@ -2,7 +2,7 @@
 
 
 #main-slide {
-    background: linear-gradient(to right, rgb(98, 215, 178), rgb(13, 214, 198), rgb(8, 190, 99) 90%);
+    background: linear-gradient(55deg, rgb(77, 138, 143) 48%, rgb(102, 175, 173) 30%);
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -23,8 +23,10 @@
 /* SLIDE DOTS */
 .slide-dots {
     position: fixed;
-    right: 200px;
-    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px;
+    text-align: center;
 }
 
 .list-dots {
@@ -33,9 +35,9 @@
 }
 
 .dot-item {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+    width: 40px;
+    height: 8px;
+    border-radius: 12px;
     background-color: #fff;
     margin: 0 3px;
     cursor: pointer;
@@ -45,12 +47,17 @@
 /* HEADER */
 
 #header {
-    width: 100vw;
     height: 130px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index: 555;
+    width: 100%;
+}
+
+.header__wrapper {
+
 }
 
 .header__logo {
@@ -58,7 +65,7 @@
     font-size: 40px;
     font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     letter-spacing: .15em;
-    text-shadow: 1px -1px 0 #0996c9, -1px 2px 1px #08a19e, -2px 4px 1px #05b838, -3px 6px 1px #30f03a, -4px 8px 1px #15a2be;
+    text-shadow: 1px -1px 0 #0996c9, -1px 2px 1px #08a19e, -2px 4px 1px #499b9d, -3px 6px 1px #68b6b2, -4px 8px 1px #15a2be;
 }
 
 .header__logo-name {
@@ -71,10 +78,10 @@
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
-    right: 40%;
+    right: 60%;
     content: '';
-    background-color: rgb(132, 240, 55);
-    height: 10px;
+    background-color: rgb(83, 174, 180);
+    height: 8px;
     border-radius: 5px;
 }
 
@@ -86,6 +93,12 @@
 .header__navbar-item {
     padding: 0 20px;
     
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__navbar-link {
@@ -110,13 +123,32 @@
 }
 
 .header__navbar-item:hover .header__navbar-link {
-    color: rgb(84, 80, 80);
+    color: rgb(86, 84, 84);
 }
 
 .header__navbar-item:hover .header__navbar-link::after {
     width: 100%;
 }
 
+.btn-create {
+    background-color: rgb(227, 236, 53);
+    padding: 8px 16px;
+    border-radius: 4444px;
+}
+
+.btn-create:hover {
+    background-color: rgb(229, 229, 1);
+}
+
+.btn-create-link {
+    color: rgb(94, 98, 98);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-create-link:hover {
+    color: rgb(94, 98, 98);
+}
 
 /* CONTENT */
 
@@ -148,7 +180,7 @@
 .left-content-btn {
     background-color: rgb(227, 236, 53);
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 3338px;
 }
 
 .left-content-btn-link {
@@ -163,6 +195,38 @@
 
 .left-content-btn:hover .left-content-btn-link {
     color: rgb(94, 98, 98);
+}
+
+.social-network {
+    text-align: left;
+}
+
+.social-link {
+    font-size: 20px;
+    margin: 0 6px;
+    color: #fff;
+}
+
+.social-link:hover {
+    color: rgb(216, 213, 213);
+}
+
+.section-title {
+   margin-bottom: 30px;
+   color: #fff;
+   font-weight: 600;
+   display: inline-block;
+   position: relative;
+}
+
+.section-title::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 45%;
+    content: '';
+    height: 5px;
+   
 }
 
 /* Chỉnh sửa thư viện carousel */

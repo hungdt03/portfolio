@@ -70,7 +70,7 @@ img {
 }
 
 .header__navbar-link.active {
-    color: rgb(84, 80, 80);
+    color: rgb(86, 84, 84);
 }
 
 .header__navbar-link.active::after {
@@ -87,6 +87,8 @@ img {
 }
 
 .dot-item.dot-active {
-    background-color: #ffbb55;
+    /* background-color: #e5fe05; */
     border: 2px solid #fff;
+    width: 70px;
+    transition: width .2s linear;
 }
